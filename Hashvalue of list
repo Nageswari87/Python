@@ -1,0 +1,4 @@
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    print(hash(tuple(integer_list))) """ hashing can only performed on immutable type since the list is mutable to calculate the hashvalues the list is converted to tuple(which is immutable)""""
