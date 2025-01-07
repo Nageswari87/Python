@@ -1,0 +1,7 @@
+n=int(input("Enter n value:"))
+for i in range(0,n):
+    j=0
+    while j<=i:                         
+        print("*",end=" ")
+        j=j+1
+    print()
