@@ -1,0 +1,9 @@
+
+l = list(map(int, input("Enter elements to the list (space-separated): ").split()))
+key = int(input("Enter the key value: "))
+for i in l:
+    if key == i:
+        print(f"Element found at position{l.index(i)}")
+        break
+else:
+    print("Element not found")
