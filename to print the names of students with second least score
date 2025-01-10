@@ -1,0 +1,12 @@
+n=int(input("Enter thesize of nested list:"))
+l=[]
+for _ in range(n):
+    name=input("Enter name:")
+    marks=float(input("Enter marks:"))
+    l.append([name,marks])
+print(l)
+s_m=sorted({s[1] for s in l })[1]
+s_n=[s[0] for s in l if s_m==s[1]]
+s_n.sort()
+for i in s_n:
+    print(i)
