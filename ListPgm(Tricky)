@@ -1,0 +1,4 @@
+l=list(map(int,input("Enter list elements:").split()))
+for i in l:
+    l.remove(i)#Shifting can be done automatically in list
+print(l)
