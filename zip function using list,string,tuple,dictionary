@@ -1,0 +1,39 @@
+##The zip()function is used to combine two or more iterables
+##(like lists, tuples, or strings) element by element, creating pairs (or tuples)
+##of corresponding elements. It is useful in scenarios where you need to
+##group related data from different iterables.
+
+##using list
+
+a=[1,2]
+b=[3,4]
+zipped=zip(a,b)
+print(list(zipped))
+print(list(zipped))
+
+###Using string
+
+a="Hii Nagu"
+b="Hii Pandu"
+z=zip(a,b)
+print(*z)
+
+###Using tuple
+
+a=(10,20,30,40)
+b=(50,60,70,80)
+z=zip(a,b)
+print(*z)
+
+#Using Dictionary
+
+##When dictionaries are passed to zip(),
+##it uses the keys of the dictionaries by default.
+a={1:10,2:20,3:30}
+b={4:40,5:50,6:60}
+z=zip(a,b)
+print(*z)
+z=zip(a.values(), b.values())#To access values
+print(*z)
+z=zip(a.items(),b.items())#To access key value pairs
+print(*z)
