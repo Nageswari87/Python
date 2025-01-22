@@ -1,0 +1,40 @@
+class VacuumAgent:
+    def __init__(self):
+        self.percept_history=[]
+    def perceive(self,location,status):
+        self.percept_history.append((location,status))
+    def act(self):
+        current_location,status=self.percept_history[-1]
+        if status=="Dirty":
+            return "Clean"
+        elif current_location=="A":
+            return "Move to B"
+        else:
+            return "Move to A"
+    
+    def simulate_vacuum_agent():
+        environment= {
+            'A':"Clean",
+            'B':"Clean"
+        }
+        agent=VacuumAgent()
+        for step in range(5):
+            current_location="A" if step%2==0 else "B"
+            status=environment[current_location]
+            agent.perceive(current_location,status)
+            action=agent.act()
+            print(f"current Location:{current_location},status:{status}")
+            print(f"Action:{action}")
+            if action=="Clean":
+                environment[current_location]="Clean"
+            elif action=="Move to B":
+                current_location="B"
+            elif action=="Move to A":
+                current_location="A"
+            print(f"Environment{environment}")
+
+VacuumAgent.simulate_vacuum_agent()
+                  
+        
+        
+        
