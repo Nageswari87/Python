@@ -1,0 +1,25 @@
+#APPROACH-1
+
+s=input()
+l=list(s)
+new_list=[char for char in l if char not in "(){}[]"]
+print(*new_list)
+
+#APPROACH-2
+
+s=input()
+l=[]
+for i in s:
+    if i.isalpha():
+        l.append(i)
+print(*l)
+
+#APPROACH-3
+
+s=input()
+l=[]
+for i in s:
+    if i not in "(){}[]":
+        l.append(i)
+print(*l)
+        
