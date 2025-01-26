@@ -1,0 +1,10 @@
+#Why to use Kadane's Algorithm:It returns the sum in o(n)time  with o(1) space complexity
+arr = eval(input())  # Example array
+max_sum = arr[0]  # Initialize max sum as the first element
+current_sum = 0
+
+for num in arr:
+    current_sum = max(num, current_sum + num)  # Update the current sum
+    max_sum = max(max_sum, current_sum)       # Update the maximum sum
+
+print(max_sum)  # Print the largest sum of any subarray
