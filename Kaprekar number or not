@@ -1,0 +1,10 @@
+n=int(input("Enter a number:"))
+sq=str(n*n)
+avg=len(sq)//2
+first=int(sq[:avg] or 0)
+second=int(sq[avg:] or 0)
+first=first+second
+if n==first:
+    print("Kaprekar number")
+else:
+    print("Not a Kaprekar number")
