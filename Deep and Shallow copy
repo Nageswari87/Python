@@ -1,0 +1,7 @@
+import copy
+l1=[[10,20],[30,40,50]] #Ex: l1=[10,20,30,40,50] then the result of both shallow and deep copy is same since int in python is immutable
+shallow=copy.copy(l1)
+deep=copy.deepcopy(l1)
+l1[0][0]=100
+print(shallow)
+print(deep)
