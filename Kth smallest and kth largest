@@ -1,0 +1,7 @@
+arr=eval(input()) #Kth smallest and Kth largest
+k=int(input("k="))
+n=len(arr)
+arr.sort()
+print(arr)
+print(arr[k-1])
+print(arr[n-k])
