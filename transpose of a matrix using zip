@@ -1,0 +1,3 @@
+matrix=eval(input())
+print(matrix)
+print(*zip(*matrix))
