@@ -1,0 +1,14 @@
+n=input()
+s=0
+for i in n:
+    if i=='(':
+        s+=1
+    elif i==')':
+        s-=1
+    if s<0:
+        print("Invalid")
+        break
+if s==0:
+    print("Valid")
+elif s>0:
+    print("Invalid")
