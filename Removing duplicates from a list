@@ -1,0 +1,10 @@
+arr=eval(input()) 
+s=set()
+l=[]
+for i in arr:
+    if i in s:
+        l.append(i)
+    else:
+        s.add(i)
+print("After removing duplicates:",s)
+print("Duplicates in the given array:",l)
