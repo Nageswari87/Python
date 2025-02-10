@@ -1,0 +1,8 @@
+#description:Check the length of individual strings in the ip is greaterthan or equl to 2 if true
+#check the first and last characters are same if yes print those strings
+n=int(input())
+s=input().strip()
+l=s.split()
+for i in l:
+    if len(i)>=2 and i[0]==i[-1]:
+        print(i)
