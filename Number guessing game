@@ -1,0 +1,39 @@
+import random
+import time
+turn=1
+player1=0
+player2=0
+current_player=0
+for i in range(5):
+    if turn==1:
+        print("Player 1 Turn")
+        current_player=1
+        turn=2
+    else:
+        print("Player 2 Turn")
+        current_player=2
+        turn=1
+    print("Guess the number:")
+    guess=int(input())
+    time.sleep(1)
+    n=random.randint(1,10)
+    if n==guess:
+        print("Your guess is correct!")
+        print()
+        if current_player==1:
+            player1+=1
+        if current_player==2:
+            player2+=1
+    else:
+        print("You failed try again")
+        print(f"The actual number is:{n} The number u guessed is:{guess}")
+        print()
+print("Player1 Score is:",player1)
+print("Player2 Score is:",player2)
+if player1>player2:
+    print("Player1 won the match")
+elif player2>player1:
+    print("Player2 won the match")
+else:
+    print("Match is draw")
+print("End of the game.....")
