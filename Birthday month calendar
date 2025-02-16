@@ -1,0 +1,7 @@
+#Day1
+import calendar
+month=int(input())
+year=int(input())
+cal=calendar.month(year,month)
+cal=cal.replace(" 8","❤️")
+print(cal)
