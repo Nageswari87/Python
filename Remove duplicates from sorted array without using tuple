@@ -1,0 +1,11 @@
+l=eval(input())
+a=[]
+b=[]
+l.sort()
+for i in l:
+    if i in a:
+        b.append(i)
+    else:
+        a.append(i)
+print(f"List after removing duplicates:{a}")
+print(f"Duplicate elements in the list are:{b}")
