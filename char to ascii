@@ -1,0 +1,2 @@
+c=input()
+print(f"The Ascii value of character {c} is {ord(c)}")
