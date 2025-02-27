@@ -1,0 +1,7 @@
+class Example:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print(f"name:{self.name}")
+e=Example("Krishna");
+e.display()
