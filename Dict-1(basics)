@@ -1,0 +1,6 @@
+a=dict()
+print(type(a))
+print(a)
+b={}
+print(type(b))
+print(b)
