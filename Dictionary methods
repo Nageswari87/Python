@@ -1,0 +1,43 @@
+# Dictionary methods
+# Method	Description
+# clear()	Removes all the elements from the dictionary
+# copy()	Returns a copy of the dictionary
+# fromkeys()	Returns a dictionary with the specified keys and value
+# get()	Returns the value of the specified key
+# items()	Returns a list containing a tuple for each key value pair
+# keys()	Returns a list containing the dictionary's keys
+# pop()	Removes the element with the specified key
+# popitem()	Removes the last inserted key-value pair
+# setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+# update()	Updates the dictionary with the specified key-value pairs
+# values()	Returns a list of all the values in the dictionary
+
+d={}
+d["Nageswari"]=20
+d["Pandu"]=19
+d["Suneetha"]=38
+d["GVRN"]=43
+d["Mahii"]=25
+d["Krishna"]=25
+d["Nani"]=30
+d["Anil"]=28
+a=0
+print("Dictionary:",d,"\n")
+print("Copy od dictionary:",d.copy(),"\n")
+print("Specific key and value:",d.fromkeys("Nageswari"),"\n")
+# fromkeys() takes each unique character from the string and makes it a dictionary key.
+# It assigns each key the default value None (because no second argument is provided).
+print("Specific key and value:",d.fromkeys("Nageswari",1),"\n")
+print("Value of specified key:",d.get("Pandu"),"\n")
+print("using get for not existing key:",d.get("Ravi"),"\n")
+print("Keys in the dictionary are:",d.keys(),"\n")
+print("Values in the dictionary are:",d.values(),"\n")
+print("Keys and values in the dictionary are:",d.items(),"\n")
+print("Removing the specific element from the dictionary(Nani):",d.pop("Nani"),"\n")
+print("Original dict after performing pop:",d,"\n")
+print("Removing the last inserted key value pair:",d.popitem(),"\n")
+print("Value of the specified key if key doesnot exist insert the key with specified value:",d.setdefault("Ram",1),"\n")
+print("Dictionary after setdefault:",d,"\n")
+print("Update dict with specified key and value pairs:",d.update({"Vamsi":28}),"\n")
+print("Dictionary after performing update:",d)
+print("Clear dictionary:",d.clear(),"\n")
