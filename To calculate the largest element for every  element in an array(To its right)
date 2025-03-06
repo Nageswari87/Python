@@ -1,0 +1,9 @@
+l=eval(input())
+res=[]
+maxi=0
+for i in range(len(l)-1,-1,-1):
+    res.append(maxi)
+    maxi=max(maxi,l[i])
+res.reverse()
+print(res)
+    
