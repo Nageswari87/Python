@@ -1,0 +1,37 @@
+#Approach 1
+s=input("Enter the gates to validate:")
+stack=[]
+di={'{':'}','(':')','[':']'}
+for char in s:
+    if char in di:
+        stack.append(char)
+    elif char in di.values():  
+        if not stack or di[stack.pop()]!=char:
+            print("Invalid")
+            break
+else:
+    if not stack:
+        print("Valid")
+    else:
+        print("Invalid")
+
+#Approach 2
+s=input("Enter the gates to validate:")
+stack=[]
+for ch in s:
+    if ch=='{' or ch=='(' or ch=='[':
+        stack.append(ch)
+    else:
+        if len(stack)==0:
+            print("Invalid")
+            break
+        else:
+            top=stack.pop()
+            if ch==')' and top!='(' or ch=='}'and top!='{' or ch==']' and top!='[':
+                print("Invalid")
+                break
+else:
+    if not stack:
+        print("Valid")
+    else:
+        print("Invalid")
