@@ -1,0 +1,12 @@
+def rotateleft(arr,k):
+    n=len(arr)
+    k=k%n
+    rotated_arr=arr[k:]+arr[:k]
+    print(f"The array after rotating {k} positions {rotated_arr}")
+print("Enter no.of elements:")
+n=int(input())
+print(f"Enter {n} elements:")
+arr=list(map(int,input().split()))
+print("Enter no.of values to rotate:")
+k=int(input())
+rotateleft(arr,k)
