@@ -1,0 +1,5 @@
+#Sum of squares of even numbers using list comprehension
+li=list(map(int,input().split()))
+sq=[x**2 for x in li if x%2==0]
+print(sq)
+print(sum(sq))
