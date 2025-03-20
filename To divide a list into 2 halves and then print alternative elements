@@ -1,0 +1,10 @@
+l=list(map(int,input().split()))
+n=len(l)
+mid=(n)//2
+first=l[:mid]
+second=l[mid:]
+res=list(zip(first,second))
+for a,b in res:
+    print(a,b,end=" ")
+if n%2!=0:
+    print(second[-1])
