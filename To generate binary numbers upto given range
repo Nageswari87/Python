@@ -4,7 +4,7 @@ print(f"Binary numbers between 1 and {n} are:")
 for i in range(1,n+1):
     print(f"{i:b}",end=" ")
 #Including trailing zeroes
-#4.To generate binary numbers
+#With trailing zeroes
 n=int(input("Enter the range to generate binary numbers:"))
 print(f"Binary numbers between 1 and {n} are:")
 zeroes=len(f"{n:b}")
