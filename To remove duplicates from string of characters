@@ -1,0 +1,9 @@
+
+l=input()
+s=set()
+res=[]
+for i in l:
+    if i not in s:
+        s.add(i)
+        res.append(i)
+print(*res)
