@@ -1,0 +1,6 @@
+l1=input().split()
+s1=set()
+for i in l1:
+    if i not in s1:
+        s1.add(i)
+        print(i,end=" ")
