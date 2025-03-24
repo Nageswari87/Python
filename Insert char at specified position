@@ -1,0 +1,9 @@
+
+ch=list(input("Enter characters:"))
+ind=int(input("Enter index:"))
+data=input("Enter the char to insert:")
+if ind>len(ch):
+    print("invalid")
+else:
+    ch.insert(ind,data)
+print(*ch)
