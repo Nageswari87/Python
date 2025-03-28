@@ -1,0 +1,4 @@
+li=list(map(int,input().split()))
+sq=list(map(lambda x:x**2,filter(lambda x:x%2==0,li)))
+print(sq)
+print(sum(sq))
