@@ -1,0 +1,3 @@
+l1=list(map(int,input().strip().split()))
+s1=set(l1)
+print("List elements are unique"if len(l1)==len(s1) else "List contains duplicate elements")
