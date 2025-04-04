@@ -1,0 +1,8 @@
+import re
+string=input("Enter a string:")
+digits=re.sub("[^0-9]","",string)
+alphabets=re.sub("[^a-zA-Z]","",string)
+spaces=re.findall(r"\s",string)
+print("Digits Count:",digits)
+print("Alphabets Count:",alphabets)
+print("Spaces(single,tab,newline):",spaces)
