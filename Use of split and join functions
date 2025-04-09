@@ -1,0 +1,6 @@
+# Split: To convert string into list of strings
+# Join: To convert list of strings into a string
+s="hello 87 how are you"
+s=s.split()
+print(s)
+print(" ".join(s))
