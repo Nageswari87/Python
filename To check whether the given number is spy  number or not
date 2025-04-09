@@ -1,0 +1,13 @@
+n=int(input("Enter a number:"))
+summ=0
+prod=1
+s=n
+while n!=0:
+    rem=n%10
+    n=n//10
+    summ+=rem
+    prod*=rem
+if summ==prod:
+    print(s," is a spy number")
+else:
+    print("Not a spy number")
