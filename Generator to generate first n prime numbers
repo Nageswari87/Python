@@ -1,0 +1,16 @@
+def is_prime(num):
+    for i in range(2,num):
+        if num%i==0:
+            return False
+    return True
+def prime_generator(n):
+    num=2
+    while n:
+        if is_prime(num):
+            yield num
+            n-=1
+        num+=1
+x=int(input("Enter no.of prime numbers to generate:"))
+it=prime_generator(x)
+for e in it:
+    print(e,end=" ")
