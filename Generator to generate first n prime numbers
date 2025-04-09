@@ -12,5 +12,4 @@ def prime_generator(n):
         num+=1
 x=int(input("Enter no.of prime numbers to generate:"))
 it=prime_generator(x)
-for e in it:
-    print(e,end=" ")
+print(*it)
