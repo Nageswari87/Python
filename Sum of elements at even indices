@@ -1,0 +1,6 @@
+l=list(map(int,input().split()))
+n=len(l)
+even_sum=0
+for i in range (1,n,2):
+    even_sum+=l[i]
+print("The sum of elements in even positions are:",even_sum)
