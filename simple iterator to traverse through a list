@@ -1,0 +1,7 @@
+l=[26,11,2,8,25,5]
+it=iter(l)
+while True:
+    try:
+        print(next(it))
+    except StopIteration:
+        break
