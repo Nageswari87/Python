@@ -1,0 +1,10 @@
+l=list(map(int,input().split()))
+zeroes,ones,twos=[],[],[]
+for i in l:
+    if i==0:
+        zeroes.append(i)
+    elif i==1:
+        ones.append(i)
+    else:
+        twos.append(i)
+print(zeroes+ones+twos)
