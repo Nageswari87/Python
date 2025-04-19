@@ -1,0 +1,12 @@
+l=list(map(int,input().split()))
+zeroes,ones,twos=0,0,0
+for i in l:
+    if i==0:
+        zeroes+=1
+    elif i==1:
+        ones+=1
+    else:
+        twos+=1
+l=[0]*zeroes+[1]*ones+[2]*twos
+print(zeroes,ones,twos)
+print(l)
