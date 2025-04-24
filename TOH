@@ -1,0 +1,14 @@
+class Tower:
+    def __init__(self):
+        self.terminate=1
+    def printMove(self,source,destination):
+        print("{} -> {}".format(source,destination))
+    def move(self,disc,source,destination,auxilliary):
+        if disc==self.terminate:
+            self.printMove(source,destination)
+        else:
+            self.move(disc-1,source,auxilliary,destination)
+            self.move(1,source,destination,auxilliary)
+            self.move(disc-1,auxilliary,destination,source)
+t=Tower()
+t.move(3,'A','B','C')
