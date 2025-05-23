@@ -1,0 +1,41 @@
+Concept builder
+
+#1
+print("Hello {name1} and {name2}".format(name1='Nagu',name2='Pandu'))
+#Op:Hello Nagu and Pandu
+#2
+print("a"+"bc")
+#Op:abc
+#3
+"abcd"[2:]
+#Op:'cd'
+#4
+print(chr(ord('A')))
+#Op:A
+#5
+print("hello"+1+2+3)
+#Op:TypeError                                 Traceback (most recent call last)
+#Cell In[6], line 1
+#1 print("hello"+1+2+3)
+
+#TypeError: can only concatenate str (not "int") to str
+
+#6
+s="hello"
+print(type(s))
+#Op:<class 'str'>
+#7
+s="\t\tWorld\n"
+print(s.strip())
+#Op:World
+#8
+s1="Hello"
+s2="Hello"
+print(s1.__contains__(s2))
+#Op:True
+#9
+print("xyyzxyzxzxyy".count('yy'))
+#Op:2
+#10
+print("xyyzxyzxzxyy".endswith("xyy"))
+#Op:True
