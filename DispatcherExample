@@ -1,0 +1,17 @@
+from multipledispatch import dispatch
+
+@dispatch(int, int)
+def add(x, y):
+    print("Adding two ints:", x + y)
+
+@dispatch(str, str)
+def add(x, y):
+    print("Concatenating two strings:", x + y)
+
+@dispatch(int, str)
+def add(x, y):
+    print("Int and string:", str(x) + y)
+
+add(5, 3)      # Adding two ints: 8
+add("foo", "bar")  # Concatenating two strings: foobar
+add(10, " apples") # Int and string: 10 apples
