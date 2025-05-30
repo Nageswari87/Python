@@ -1,0 +1,6 @@
+string=input("Enter a string:")
+spcl=[]
+for i in string:
+    if(not i.isalpha()):
+        spcl.append(i)
+print(spcl)
