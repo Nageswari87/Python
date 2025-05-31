@@ -1,0 +1,29 @@
+#Simple calculator program
+print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit")
+def f():
+    a=int(input("Enter value for a:"))
+    b=int(input("Enter value for b:"))
+    return a,b
+while True:
+    n=int(input("Enter the operation to perform:"))
+    if n==1:
+        a,b=f()
+        print("Addition:",a+b)
+    elif n==2:
+        a,b=f()
+        print("Subtraction:",a-b)
+    elif n==3:
+        a,b=f()
+        print("Multiplication:",a*b)
+    elif n==4:
+        a,b=f()
+        if b>0:
+            print("Division:",a/b)
+        else:
+            print("Error:Division by zero")
+    elif n>5:
+        a,b=f()
+        print("Invalid choice")
+    else:
+        print("Exiting....")
+        break
