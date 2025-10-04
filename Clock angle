@@ -1,0 +1,5 @@
+hours,mins=map(int,input().split())
+hours_angle=(hours+(mins)/60)*30
+mins_angle=mins*6
+total=abs(hours_angle-mins_angle)
+print(total)
